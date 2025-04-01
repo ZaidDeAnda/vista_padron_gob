@@ -5,7 +5,7 @@ import psycopg2
 import streamlit as st
 
 def connect():
-    with open('strings.json') as f:
+    with open('creds.json') as f:
         params= json.load(f)
     connection = psycopg2.connect(**params)
 
